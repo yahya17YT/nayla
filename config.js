@@ -1,7 +1,7 @@
 let fs = require('fs')
 global.DeveloperMode = 'false' //true atau false, true berati iya false berati tidak Moga paham
-global.owner = ['628818770766'] // masuk in no lu sebagai owner
-global.mods = ['6283897390164'] // masuk in no moderator ny
+global.owner = ['6288270863279'] // masuk in no lu sebagai owner
+global.mods = ['6288270863279'] // masuk in no moderator ny
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // ini buat premium
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -30,15 +30,15 @@ global.APIKeys = { // Apikey lu di sini
 }
 
 // Sticker Watermark
-global.packname = 'NayLaBotz'
-global.author = 'Zevano'
+global.packname = 'DanzBot'
+global.author = 'DanzBot'
 
 global.multiplier = 36 // ini butuh berapa xp buat levelup 
 
-global.wait = '*❒ WET TUNGGU*'
-global.error = '*❒ ERROR CUK MAAP*'
-global.botwm = '© nayla' // watermark bot
-global.oname = 'Zevano' // nama owner nya
+global.wait = '*WAIT SABAR🥴*'
+global.error = '*ERROR BANH MAAP🗿*'
+global.botwm = 'DanzBot' // watermark bot
+global.oname = 'Danz Owner' // nama owner nya
 global.thum = 'https://telegra.ph/file/5859353a380d9b67be198.jpg'
 
 let chalk = require('chalk')
