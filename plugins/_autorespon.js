@@ -1,7 +1,5 @@
 let fs = require('fs')
 let fetch = require('node-fetch')
-let wm = global.botwm
-let logo = global.logo
 let handler = m => m
 
 handler.all = async function (m, { isBlocked }) {
@@ -17,12 +15,12 @@ handler.all = async function (m, { isBlocked }) {
     try {
         if (m.mentionedJid.includes(this.user.jid) && m.isGroup) {
             await this.send2Button(m.chat,
-                isBanned ? 'DanzBot lagi cape (・へ・)' : banned ? 'kamu dibanned' : 'JANGAN NGE TAG BANH,DHLH MAU KASAR TAPI LAGI PUASA🗿',
-                '',
-                isBanned ? 'Unban' : banned ? 'Pemilik Bot' : '⋮☰ Menu',
-                isBanned ? '.unban' : banned ? '.owner' : '.menu',
-                m.isGroup ? 'Owner' : isBanned ? 'Donasi' : 'Donasi',
-                m.isGroup ? '.owner' : isBanned ? '.donasi' : '.donasi', m)
+                isBanned ? 'DanzBot tidak aktif' : banned ? 'kamu dibanned' : 'lagi sad ga ush ngetag DanzBot dex',
+                'DanzBot',
+                isBanned ? 'Unban' : banned ? 'Pemilik Bot' : 'Menu',
+                isBanned ? '.unban' : banned ? '.owner' : '.?',
+                m.isGroup ? 'Ban' : isBanned ? 'Unban' : 'Donasi',
+                m.isGroup ? '.ban' : isBanned ? '.unban' : '.donasi', m)
         }
     } catch (e) {
         return
@@ -30,23 +28,24 @@ handler.all = async function (m, { isBlocked }) {
 
     // ketika ada yang invite/kirim link grup di chat pribadi
     if ((m.mtype === 'groupInviteMessage' || m.text.startsWith('https://chat') || m.text.startsWith('Buka tautan ini')) && !m.isBaileys && !m.isGroup) {
-        this.send2ButtonLoc(m.chat, logo, `
-╭━━〔 List Sewa〕━✧
-│⬦ *1 Bulan* :      *Rp 15.000*
-│⬦ *4 bulan* :      *Rp 30.000*
-│⬦ *8 bulan* :      *Rp 40.000*
-┝━━〔Payment〕━✧
-│⬦ Dana
-│⬦ Gopay
-╰━━━✧
-Note: Syarat dan Ketentuan mungkin berlaku`.trim(), wm, 'Menu', '#menu', 'Owner', '#owner', m)
+        this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `╠═〘 Beli Bot 〙 ═
+╠➥ *1 Minggu* :      *Rm 5.00*
+╠➥ *2 Minggu* : *Rm 10.00*
+╠➥ *3 Minggu* :   *Rm 15.00*
+╠➥ *1 Bulan* :        *Rm 20.00*
+║
+╠═〘 𝐏𝐄𝐌𝐁𝐀𝐘𝐀𝐑𝐀𝐍 〙 ═
+╠➥ TOPUP/PIN
+║- 088270863279 (Dana)
+║- 088270863279 (Gopay)
+╠═〘 DanzBot 〙 ═`.trim(), 'DanzBot', 'Dana', '#viadigi', 'Gopay', '#viaumobile', m)
 }
 
     // salam
-    let reg = /(terima?kasih|makasih|maacih|tengkyuh)/i
+    let reg = /(ass?alam|اَلسَّلاَمُ عَلَيْكُمْ|السلام عليکم)/i
     let isSalam = reg.exec(m.text)
     if (isSalam && !m.fromMe) {
-        m.reply(`Sama-sama (≡^∇^≡)`)
+        this.sendSticker(m.chat, fs.readFileSync('./src/salam.webp'), m, {sendEphemeral: true})
     }
 
     // backup db
@@ -69,7 +68,7 @@ Note: Syarat dan Ketentuan mungkin berlaku`.trim(), wm, 'Menu', '#menu', 'Owner'
     if (new Date() * 1 - setting.status > 1000) {
         let _uptime = process.uptime() * 1000
         let uptime = clockString(_uptime)
-        await this.setStatus(`Im DanzBot 🤖 || ⏰ Aktif selama ${uptime} jam | 👥 User : ${Object.keys(global.db.data.users).length} User || 🎐 Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik by Danz'}`).catch(_ => _)
+        await this.setStatus(`Im DanzBot🤖 | Aktif selama ${uptime} | Mode: ${global.opts['self'] ? 'Private' : setting.groupOnly ? 'Hanya Grup' : 'Publik'} |Bot by Danzz. `).catch(_ => _)
         setting.status = new Date() * 1
     }
 
