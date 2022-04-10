@@ -122,7 +122,7 @@ global.reloadHandler = function () {
     conn.off('CB:action,,call', conn.onCall)
   }
   conn.welcome = 'Hai @user\n◪ Welcome in group:\n├─ @subject\n├─ Intro dulu\n├─ ❏ Nama: \n├─ ❏ Umur: \n├─ ❏ Asal kota: \n├─ ❏ Kelas: \n├─ ❏ Jenis kelamin:'
-  conn.bye = 'Selamat Tinggal @user!\nTerimakasih Telah Bergabung Di Grup\n\nKalo Balik Jangan Lupa Bawa Gorengan Buat Anggota Disini'
+  conn.bye = 'Mental Aman Dek @user!\nNote:\nKalau Dah Keluar Jangan Masuk Lagi Bosen Bet Gua Liat Muka Lu'
   conn.spromote = '@user Sekarang Admin!'
   conn.sdemote = '@user Sekarang Bukan Admin!'
   conn.handler = handler.handler
