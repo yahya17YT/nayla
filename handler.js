@@ -499,9 +499,9 @@ module.exports = {
               } catch (e) {
               } finally {
                 text = (action === 'add' ? (chat.sWelcome || this.welcome || conn.welcome || 'ようこそ Youkuso, @user!').replace('@subject', this.getName(jid)).replace('@desc', groupMetadata.desc) :
-                  (chat.sBye || this.bye || conn.bye || '左様なら Sayounara, @user!')).replace(/@user/g, '@' + user.split`@`[0])
-                let wel = `Group Participant Join`
-                let lea = `Group Participant Leave`
+                  (chat.sBye || this.bye || conn.bye || 'Selamat Tinggal, @user!')).replace(/@user/g, '@' + user.split`@`[0])
+                let wel = `Welcome Cuy😎`             
+                let lea = `Mental Aman? `
   
 
                 this.reply(jid, text, 0, { thumbnail: kai, contextInfo: {
@@ -509,7 +509,7 @@ module.exports = {
                   externalAdReply: {
                     mediaUrl: 'https://youtu.be/-tKVN2mAKRI',
                     title: action === 'add' ? wel : lea,
-                    body: 'NayLa-B0TZ',
+                    body: 'DanzBot',
                     thumbnail: poi
                   }
                 }}) 
@@ -523,7 +523,7 @@ module.exports = {
       var alv = await(await fetch(global.thum)).buffer()
       var omg = await(await fetch(global.thum)).buffer()
         if (!text) text = (chat.sDemote || this.sdemote || conn.sdemote || '@user ```is no longer Admin```')
-        var promote = 'SELAMAT KAMU ADMIN'
+        var promote = 'Ngapain Admin Sih Dek'
         var demote = 'YAHHA KASIAN KENA DEMOTE'
         text = text.replace('@user', '@' + participants[0].split('@')[0])
         if (chat.detect) this.reply(jid, text, 0, { thumbnail: alv, contextInfo: {
@@ -531,7 +531,7 @@ module.exports = {
                   externalAdReply: {
                     mediaUrl: 'https://youtu.be/-tKVN2mAKRI',
                     title: action === 'promote' ? promote : demote,
-                    body: 'NayLa-B0TZ',
+                    body: 'DanzBot',
                     thumbnail: omg
                   }
                 }}) 
@@ -572,15 +572,15 @@ ketik *.off delete* untuk mematikan pesan ini
 
 global.dfail = (type, m, conn) => {
   let msg = {
-    rowner: 'Maaf fitur ini hanya bisa digunakan oleh *Owner*', 
-    owner: 'Maaf fitur ini hanya bisa digunakan oleh *Owner*',
-    mods: 'Maaf fitur ini hanya bisa digunakan oleh *Moderator*',
+    rowner: 'Maaf fitur ini hanya bisa digunakan oleh *Owner DanzBot*', 
+    owner: 'Maaf fitur ini hanya bisa digunakan oleh *Owner DanzBot*',
+    mods: 'Maaf fitur ini hanya bisa digunakan oleh *Moderator DanzBot*',
     premium: 'Maaf fitur ini hanya bisa digunakan oleh user *Premium*',
     group: 'Maaf fitur ini hanya bisa digunakan di *Group*',
     private: 'Maaf fitur ini hanya bisa digunakan di *Private*',
     admin: 'Maaf fitur ini hanya bisa digunakan *Admin*',
     botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan fitur ini',
-    unreg: '── 「 NOT REGISTERED 」 ──\nSilakan Register Terlebih Dahulu Sebelum Menggunakan Bot. Cara Register Cukup Dengan Command *.daftar nama.umur*\nContoh .daftar nayla.16\n\nNote:\nHarap Save Serial Number Mu Agar Bisa Melakukan Unreg Database Bot',
+    unreg: '── 「 DANZBOT REGISTERED😈🔥 」 ──\nHalo Cuy Sebelum Memakai *DanzBot* Register Dulu Ya. Cara Register Tinggal Ketik Dengan Cara *.daftar nama.umur*\nContohnya .daftar DanzBot.18\n\nNote:\nSaya Harap Anda Tidak Meminta Save Pada *DanzBot* Dan Tidak Meminta Save Pada Owner Saya *Danz*',
   }[type]
   if (msg) return m.reply(msg)
 }
