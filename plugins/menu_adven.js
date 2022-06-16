@@ -360,9 +360,9 @@ Im *NayLaBotz* And You Use
 
                     mediaUrl: 'https://youtu.be/-tKVN2mAKRI',
 
-                    title: 'CREATED BY ZEVANO',
+                    title: 'CREATED BY YAHYA',
 
-                    body: 'NayLa-B0TZ',
+                    body: 'Yahya17Botz',
 
                     thumbnail: await(await fetch(global.thum)).buffer()
 
