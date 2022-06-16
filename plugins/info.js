@@ -2,30 +2,26 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 let info = `
 ┏━━°❀❬ *INFO* ❭❀°━━┓
 ┃
-┃> Bot Recoded By :
-┃• Zevano
+┃> Bot Creator By :
+┃• Yahya17
 ┃
-┃> Bot Dibuat Dengan :
-┃• JavaScript via NodeJS
-┃• FFmpeg
-┃• ImageMagick
-┃
-┃> Thanks To :
-┃• Nurutomo
-┃• Zevano
-┃• RC047/Kuhong
+┃> Sosial Media :
+┃• Youtube: [https://youtube.com/channel/UCYZ3s2hcv-3uYuR-BuO6wqg]
+┃• Istagram: [https://instagram.com/yahya17_ch]
+┃• Grup Wa: [https://chat.whatsapp.com/HQ3Jb07y3cI8NQBCqZGYfH]
 ┃
 ┣━━°❀❬ *DONASI* ❭❀°━━┓
-┣➥ *TRI:* [089520306297]
-┣➥ *Dana:* [08818770766]
-┣➥ *Gopay:* [08818770766]
-┣➥ *LinkAja:* [08818770766]
+┣➥ *Indosat:* [085784715971]
+┣➥ *Dana:* [085784715971]
+┣➥ *Gopay:* [085784715971]
+┣➥ *Shopeepay:* [085784715971]
+┣➥ *Ovo:* [085784715971]
 ┃ 「 *Chat OWNER* 」
-┃ > *INGIN DOANSI ? https://wa.me/628818770766*
+┃ > *INGIN DOANSI ? https://wa.me/6285784715971*
 ┗━━━━━━━━━━━━━━━━
 `.trim()
 
-conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*NAYLABOTZ TERVERIFIKASI*', 'status@broadcast')
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*YAHYA17BOTZ TERVERIFIKASI*', 'status@broadcast')
 }
 handler.help = ['info']
 handler.tags = ['info']
