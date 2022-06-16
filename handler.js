@@ -507,7 +507,7 @@ module.exports = {
                 this.reply(jid, text, 0, { thumbnail: kai, contextInfo: {
                   mentionedJid: [user],
                   externalAdReply: {
-                    mediaUrl: 'https://youtu.be/-tKVN2mAKRI',
+                    mediaUrl: 'https://youtube.com/channel/UCYZ3s2hcv-3uYuR-BuO6wqg',
                     title: action === 'add' ? wel : lea,
                     body: 'DanzBot',
                     thumbnail: poi
@@ -529,7 +529,7 @@ module.exports = {
         if (chat.detect) this.reply(jid, text, 0, { thumbnail: alv, contextInfo: {
                   mentionedJid: this.parseMention(text),
                   externalAdReply: {
-                    mediaUrl: 'https://youtu.be/-tKVN2mAKRI',
+                    mediaUrl: 'https://youtube.com/channel/UCYZ3s2hcv-3uYuR-BuO6wqg',
                     title: action === 'promote' ? promote : demote,
                     body: 'DanzBot',
                     thumbnail: omg
@@ -580,7 +580,7 @@ global.dfail = (type, m, conn) => {
     private: 'Maaf fitur ini hanya bisa digunakan di *Private*',
     admin: 'Maaf fitur ini hanya bisa digunakan *Admin*',
     botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan fitur ini',
-    unreg: '── 「 DANZBOT REGISTERED😈🔥 」 ──\nHalo Cuy Sebelum Memakai *DanzBot* Register Dulu Ya. Cara Register Tinggal Ketik Dengan Cara *.daftar nama.umur*\nContohnya .daftar DanzBot.18\n\nNote:\nSaya Harap Anda Tidak Meminta Save Pada *DanzBot* Dan Tidak Meminta Save Pada Owner Saya *Danz*',
+    unreg: '── 「 YAHYA17BOTZ REGISTERED😈🔥 」 ──\nHalo Cuy Sebelum Memakai *YAHYA17BOTZ* Register Dulu Ya. Cara Register Tinggal Ketik Dengan Cara *.daftar nama.umur*\nContohnya .daftar Yahya.18\n\nNote:\nSaya Harap Anda Tidak Meminta Save Pada *Yahya17Botz* Dan Tidak Meminta Save Pada Owner Saya *Yahya*',
   }[type]
   if (msg) return m.reply(msg)
 }
