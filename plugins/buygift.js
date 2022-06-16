@@ -12,8 +12,10 @@ let handler = async m => m.reply(`
 │• 30K / VIP (Permanen)
 │
 │ > Pembayaran :
-│• Dana : 628818770766
-│• Gopay : 628818770766
+│• Dana : 085784715971
+│• Gopay : 085784715971
+|• Shopeepay : 085784715971
+|• Ovo : 085784715971
 ╰────
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['buygift']
