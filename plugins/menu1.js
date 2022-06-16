@@ -7,7 +7,7 @@ let tags = {
 const defaultMenu = {
   before: `
 Hello There
-Im DanzBot
+Im Yahya17Botz
 
 UserName : %name
 Uptime : %uptime
