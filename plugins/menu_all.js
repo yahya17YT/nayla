@@ -393,11 +393,11 @@ Im *NayLaBotz* And You Use
 
     externalAdReply: {
 
-                    mediaUrl: 'https://youtu.be/-tKVN2mAKRI',
+                    mediaUrl: 'https://youtube.com/channel/UCYZ3s2hcv-3uYuR-BuO6wqg',
 
-                    title: 'CREATED BY ZEVANO',
+                    title: 'CREATED BY YAHYA',
 
-                    body: 'NayLa-B0TZ',
+                    body: 'Yahya17Botz',
 
                     thumbnail: await(await fetch(global.thum)).buffer()
 
